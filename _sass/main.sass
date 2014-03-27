@@ -6,6 +6,7 @@ $gblue: #1E0FBE
 $cream: #F2E9E1
 $offwhite: #EFEFEF
 $offblack: #1C140D
+$grey: #DFDFDF
 
 /* color assignments */
 $link-color: $gblue
@@ -19,6 +20,8 @@ $opensans: 'Open Sans'
 $font: $opensans , sans-serif
 $maxwidth: 768px
 $break-large: 52em
+$menu-background: #191818
+$menu-color: #EEE
 
 html,
 button,
@@ -60,6 +63,29 @@ a
   top: 0
   bottom: 0
   overflow-y: auto
-  overflow-x: none
+  overflow-x: hidden
+  border-style: solid
+  border-width: 1px
+  border-color: $grey
   @media screen and (min-width: $break-large)
     left: 160px
+
+.pure-menu .pure-menu-heading
+  margin-top: 0
+
+.pure-menu.pure-menu-open
+  border: none
+  ul li
+    border-bottom: 1px solid #B7B7B7
+
+#menu, #menu a
+  background-color: $menu-background
+  color: $menu-color
+
+.logo
+  height: 160px
+  background-color: $menu-background
+  background-image: url('/images/logo-20131019.png')
+  background-size: 125px 125px
+  background-position: center
+  background-repeat: no-repeat
