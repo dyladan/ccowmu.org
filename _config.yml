@@ -1,6 +1,17 @@
-name: Your New Jekyll Site
+name: Computer Club of Western Michigan University
 markdown: redcarpet
 pygments: true
+permalink: /:title/
+
+admin:
+  name: Webmaster
+  email: webmaster@yakko.cs.wmich.edu
+
+github: https://github.com/ccowmu/
 
 gems:
 - jekyll-compass
+
+exclude:
+- Gemfile
+- Gemfile.lock
