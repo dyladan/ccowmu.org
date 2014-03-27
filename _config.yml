@@ -11,6 +11,7 @@ github: https://github.com/ccowmu/
 
 gems:
 - jekyll-compass
+- jekyll-haml
 
 exclude:
 - Gemfile
