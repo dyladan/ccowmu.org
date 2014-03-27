@@ -18,6 +18,7 @@ $opensans: 'Open Sans'
 /* variables */
 $font: $opensans , sans-serif
 $maxwidth: 768px
+$break-large: 52em
 
 html,
 button,
@@ -32,13 +33,16 @@ a
   color: $link-color
 
 #layout
-  padding-left: 160px
+  padding-left: 0
+  @media screen and (min-width: $break-large)
+    padding-left: 160px
 
 .content
   background-color: $background
   margin-left: auto
   margin-right: auto
   display: block
+  padding: 2em
 
 .header
   margin: auto
@@ -50,7 +54,6 @@ a
   margin: 0 auto
 
 #menu
-  left: 160px
   margin-left: -160px
   position: fixed
   width: 160px
@@ -58,3 +61,5 @@ a
   bottom: 0
   overflow-y: auto
   overflow-x: none
+  @media screen and (min-width: $break-large)
+    left: 160px
