@@ -22,6 +22,7 @@ $maxwidth: 768px
 $break-large: 52em
 $menu-background: #191818
 $menu-color: #EEE
+$menu-width: 160px
 
 html,
 button,
@@ -38,7 +39,7 @@ a
 #layout
   padding-left: 0
   @media screen and (min-width: $break-large)
-    padding-left: 160px
+    padding-left: $menu-width
 
 .content
   background-color: $background
@@ -57,9 +58,9 @@ a
   margin: 0 auto
 
 #menu
-  margin-left: -160px
+  margin-left: -$menu-width
   position: fixed
-  width: 160px
+  width: $menu-width
   top: 0
   bottom: 0
   overflow-y: auto
@@ -68,10 +69,11 @@ a
   border-width: 1px
   border-color: $grey
   @media screen and (min-width: $break-large)
-    left: 160px
+    left: $menu-width
 
 .pure-menu .pure-menu-heading
   margin-top: 0
+  white-space: normal
 
 .pure-menu.pure-menu-open
   border: none
@@ -83,7 +85,7 @@ a
   color: $menu-color
 
 .logo
-  height: 160px
+  height: $menu-width
   background-color: $menu-background
   background-image: url('/images/logo-20131019.png')
   background-size: 125px 125px
