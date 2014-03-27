@@ -3,13 +3,14 @@ $white: #FFF
 $black: #000
 $green: #CBE86B
 $gblue: #1E0FBE
+$blue: #0266C8
 $cream: #F2E9E1
 $offwhite: #EFEFEF
 $offblack: #1C140D
 $grey: #DFDFDF
 
 /* color assignments */
-$link-color: $gblue
+$link-color: $blue
 $background: $white
 
 /* fonts */
@@ -23,6 +24,7 @@ $break-large: 52em
 $menu-background: #191818
 $menu-color: #EEE
 $menu-width: 10em
+$menu-font-size: 16pt
 
 html,
 button,
@@ -35,6 +37,10 @@ textarea,
 
 a
   color: $link-color
+  text-decoration: none
+
+ul
+  list-style-type: none
 
 #layout
   padding-left: 0
@@ -68,6 +74,7 @@ a
   border-style: solid
   border-width: 1px
   border-color: $grey
+  font-size: $menu-font-size
   @media screen and (min-width: $break-large)
     left: $menu-width
 
@@ -87,7 +94,7 @@ a
 .logo
   height: $menu-width
   background-color: $menu-background
-  background-image: url('/images/logo-20131019.png')
-  background-size: 125px 125px
+  background-image: url('/images/seal-white.svg')
+  background-size: 90%
   background-position: center
   background-repeat: no-repeat
