@@ -16,7 +16,7 @@
     %link{:href => "/css/main.css", :rel => "stylesheet"}/
   %body
     #layout
-      = render :partial => "menu"
+      {% convert_include menu.haml %}
       .pure-g-r
         .pure-u-2-3.content
           {{ content }}
