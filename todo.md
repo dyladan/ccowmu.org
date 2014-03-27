@@ -13,3 +13,4 @@ To Do List
 - spacing weird on plan page near games
 - plan faq
 - plan registration
+- konami code
