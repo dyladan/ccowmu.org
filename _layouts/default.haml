@@ -15,9 +15,18 @@
     / Custom CSS
     %link{:href => "/css/main.css", :rel => "stylesheet"}/
   %body
-    .pure-g-r
-      .pure-u-2-3.content
-        .header
-          %h1
-            {{ site.name }}
-        {{ content }}
+    #layout
+      #menu
+        .pure-menu.pure-menu-open
+          %a.pure-menu-heading{:href => "/"} CCOWMU
+          %ul
+            %li
+              %a{:href => "#"} PLAN
+            %li
+              %a{:href => "#"} Contact
+      .pure-g-r
+        .pure-u-2-3.content
+          .header
+            %h1
+              {{ site.name }}
+          {{ content }}
