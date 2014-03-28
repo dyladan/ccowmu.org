@@ -15,9 +15,11 @@ Interested parties often linger in our midst for weeks before deciding if they w
 wanna join?
 ===========
 
-Just head down to Kohrman Hall, Room 2244 during office hours or on any Thursday at 6pm. A one-year membership costs $10 and gets you:
+Just head down to Kohrman Hall, Room 2244 during [office hours] [1] or on any Thursday at 6pm. A one-year membership costs $10 and gets you:
 
 - An account on the Club server, complete with SSH privileges
 - Web hosting
 - Discounts on entry to PLAN, snacks, drinks, etc
 - Access to the club room
+
+[1]: http://is.gd/KMyNmx
