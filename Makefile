@@ -47,8 +47,3 @@ ifneq ($(RUBY_VERSION),$(CURRENT_RUBY))
 else
 	@echo "Using Ruby $(RUBY_VERSION)"
 endif
-
-.PHONY: test
-test:
-	@echo $(JEKYLL)
-	@echo $(JEKYLLcompass)
