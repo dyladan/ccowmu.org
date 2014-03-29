@@ -1,6 +1,6 @@
 ---
 layout: default
-title: to do
+title: To Do List
 ---
 
 To Do List
