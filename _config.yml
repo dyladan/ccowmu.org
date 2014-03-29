@@ -1,7 +1,7 @@
 name: Computer Club at Western Michigan University
 markdown: redcarpet
 pygments: true
-permalink: /:title/
+permalink: pretty
 
 admin:
   name: Webmaster
