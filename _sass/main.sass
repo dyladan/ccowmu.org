@@ -16,15 +16,23 @@ $klight: #CCC2A3
 $klred: #8C0000
 $kdred: #590000
 
+/* kim colors */
+$c1: #CCC2A3
+$c2: #8C8570
+$c3: #4D493D
+$c4: #D9CEAD
+$c5: #B3AA8F
+
 /* variables */
 $link-color: $klred
-$background: $klight
+$background: $c4
 $font: 'Open Sans' , sans-serif
+$font-color: $c3
 $maxwidth: 768px
 $break-large: 52em
 
 /* menu */
-$menu-background: $kmed
+$menu-background: $c3
 $menu-color: $offwhite
 $menu-border-color: $kdred
 $menu-width: 200px
@@ -39,6 +47,7 @@ textarea,
 .pure-g-r [class *= "pure-u"]
   font-family: $font
   background-color: $background
+  color: $font-color
 
 a
   color: $link-color
@@ -75,9 +84,6 @@ ul.posts
   bottom: 0
   overflow-y: hidden
   overflow-x: hidden
-  border-style: solid
-  border-width: 1px
-  border-color: $menu-border-color
   font-size: $menu-font-size
   @media screen and (min-width: $break-large)
     left: $menu-width
@@ -85,12 +91,11 @@ ul.posts
 .pure-menu .pure-menu-heading
   margin-top: 0
   white-space: normal
-  border-bottom: 1px solid $menu-border-color
+  border: none
+  text-transform: none
 
 .pure-menu.pure-menu-open
   border: none
-  ul li
-    border-bottom: 1px solid $menu-border-color
 
 #menu, #menu a
   background-color: $menu-background

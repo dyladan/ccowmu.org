@@ -23,7 +23,8 @@ Games
 - Counter Strike: Global Offensive
 - League of Legends
 - Team Fortress 2
-- Unofficial Tournaments
+
+### Unofficial Tournaments
 
 - Super Smash Bros Melee
 - Board Games
