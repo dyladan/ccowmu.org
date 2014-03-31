@@ -24,7 +24,8 @@ $c4: #D9CEAD
 $c5: #B3AA8F
 
 /* variables */
-$link-color: $klred
+$link-color: $c3
+$link-decoration: underline
 $background: $c4
 $font: 'Open Sans' , sans-serif
 $font-color: $c3
@@ -51,7 +52,7 @@ textarea,
 
 a
   color: $link-color
-  text-decoration: none
+  text-decoration: $link-decoration
 
 ul.posts
   list-style-type: none
@@ -66,6 +67,9 @@ ul.posts
   margin-right: auto
   display: block
   padding: 2em
+  h1:first-child
+    border-bottom: 3px solid
+    text-align: center
 
 .header
   margin: auto
