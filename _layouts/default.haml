@@ -1,7 +1,7 @@
 !!!
 %html
   {% convert_include head.haml %}
-  %body
+  %body{:onresize => "fixMenu()"}
     #layout
       {% convert_include menu.haml %}
       .pure-g-r

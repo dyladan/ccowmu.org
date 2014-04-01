@@ -9,3 +9,12 @@ function makeMenuInvisible() {
   document.getElementById("menu").style.position = "absolute";
   document.getElementById("hamburger").setAttribute("onclick", "makeMenuVisible()");
 }
+
+function fixMenu() {
+  var w = window.outerWidth;
+
+  if (w >= 832) {
+    document.getElementById("menu").removeAttribute("style");
+    document.getElementById("hamburger").setAttribute("onclick", "makeMenuVisible()");
+  }
+}
