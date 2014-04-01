@@ -49,6 +49,7 @@ textarea,
   font-family: $font
   background-color: $background
   color: $font-color
+  margin: auto
 
 a
   color: $link-color
@@ -66,7 +67,6 @@ ul.posts
   margin-left: auto
   margin-right: auto
   display: block
-  padding: 2em
   h1:first-child
     border-bottom: 3px solid
     text-align: center
@@ -91,6 +91,10 @@ ul.posts
   font-size: $menu-font-size
   @media screen and (min-width: $break-large)
     left: $menu-width
+  @media screen and (max-width: $break-large)
+    position: relative
+    width: 100%
+    margin-left: 0px
 
 .pure-menu .pure-menu-heading
   margin-top: 0
@@ -104,6 +108,13 @@ ul.posts
 #menu, #menu a
   background-color: $menu-background
   color: $menu-color
+
+.pure-g-r
+  width: 90%
+  margin: auto
+
+.pure-g-r > .pure-u, .pure-g-r > [class*="pure-u-"]
+  width: 100%
 
 .logo
   height: $menu-width
