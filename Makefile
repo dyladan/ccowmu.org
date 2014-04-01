@@ -8,7 +8,8 @@ all: sysdeps serve
 
 .PHONY: serve
 serve:
-	jekyll serve
+	@echo "Serving and watching directory for changes"
+	@jekyll serve -w
 
 .PHONY: sysdeps
 sysdeps: version jekyll jekyll-compass jekyll-haml
