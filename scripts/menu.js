@@ -11,7 +11,7 @@ function makeMenuInvisible() {
 }
 
 function fixMenu() {
-  var w = window.outerWidth;
+  var w = document.body.clientWidth;
 
   if (w >= 832) {
     document.getElementById("menu").removeAttribute("style");
