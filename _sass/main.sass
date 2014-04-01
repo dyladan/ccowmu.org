@@ -30,7 +30,7 @@ $background: $c4
 $font: 'Open Sans' , sans-serif
 $font-color: $c3
 $maxwidth: 768px
-$break-large: 52em
+$break-small: 52em
 
 /* menu */
 $menu-background: $c3
@@ -60,8 +60,9 @@ ul.posts
 
 #layout
   padding-left: 0
-  @media screen and (min-width: $break-large)
+  @media screen and (min-width: $break-small)
     padding-left: $menu-width
+
 
 .content
   margin-left: auto
@@ -81,6 +82,7 @@ ul.posts
   margin: 0 auto
 
 #menu
+  padding-bottom: 2em
   margin-left: -$menu-width
   position: fixed
   width: $menu-width
@@ -89,12 +91,44 @@ ul.posts
   overflow-y: hidden
   overflow-x: hidden
   font-size: $menu-font-size
-  @media screen and (min-width: $break-large)
+  @media screen and (min-width: $break-small)
     left: $menu-width
-  @media screen and (max-width: $break-large)
-    position: relative
+  @media screen and (max-width: $break-small)
+    //top: -1000px
+    //bottom: 1000px
+    display: none
     width: 100%
     margin-left: 0px
+
+#layout
+  @media screen and (max-width: $break-small)
+    padding-top: 30px
+
+#mheader
+  width: 100%
+  position: fixed
+  top: 0px
+  display: block
+  background-color: $c3
+  z-index: 5
+  #hamburger
+    cursor: pointer
+    display: block
+    height: 24px
+    padding: 3px 4px 3px
+    position: relative
+    width: 25px
+    background: $c3
+    div
+      background-color: white
+      border: 1px solid #eee
+      border-radius: 2px 2px 2px 2px
+      height: 2px
+      margin-top: 3px
+      width: 90%
+  @media screen and (min-width: $break-small)
+    display: none
+
 
 .pure-menu .pure-menu-heading
   margin-top: 0
